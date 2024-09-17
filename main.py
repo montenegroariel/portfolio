@@ -3,6 +3,8 @@ from fasthtml.common import *
 app,rt = fast_app()
 
 @rt('/')
-def get(): return Div(P('Hello World!'))
+def get():
+    """ Home """
+    return Div(P('Portfolio'))
 
 serve()
